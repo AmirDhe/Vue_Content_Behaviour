@@ -1,9 +1,10 @@
-new Vue({
-    el: '#app',
-    data: {
-        items: items,
-        currentIndex: 0,
-        showDescription: false
+const app = Vue.createApp({
+    data() {
+        return {
+            items: items,
+            currentIndex: 0,
+            showDescription: false
+        };
     },
     computed: {
         currentItem() {
@@ -12,12 +13,12 @@ new Vue({
     },
     methods: {
         nextItem() {
-            if(this.currentIndex < this.items.length - 1) {
+            if (this.currentIndex < this.items.length - 1) {
                 this.currentIndex++;
             }
         },
         prevItem() {
-            if(this.currentIndex > 0) {
+            if (this.currentIndex > 0) {
                 this.currentIndex--;
             }
         },
@@ -27,5 +28,6 @@ new Vue({
     }
 });
 
+app.mount('#app');
 
 
