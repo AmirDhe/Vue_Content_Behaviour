@@ -15,13 +15,14 @@
 
 <main id="app">
   <section class="content" @click="toggleDisplay">
-    <div class="image-container">
-      <img v-bind:src="currentItem.img" alt="Image représentant {{ currentItem.title }}" class="image-hover">
-    </div>
 
     <div class="text-container">
       <h2 v-show="!showDescription">{{ currentItem.title }}</h2>
       <p v-show="showDescription">{{ currentItem.desc }}</p>
+    </div>
+
+    <div class="image-container">
+      <img v-bind:src="currentItem.img" alt="Image représentant {{ currentItem.title }}" class="image-hover">
     </div>
 
     <div class="button-container">
@@ -32,13 +33,14 @@
 </main>
 
 <footer>
-  <p>©2023 Ilac-Efrei Vue Project By Amir DAHMANE and Raphael DAUBIAN</p>
+  <p>&copy; 2023 Mon Site Vue</p>
 </footer>
 
 <script src="data/items.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
+
 
 
 
