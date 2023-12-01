@@ -15,7 +15,7 @@ This project is a single-page application demonstrating the integration of Vue.j
 
 ## Live Demo
 
-[Click here for the live demo](#)
+[Click here for the live demo](https://amirdhe.github.io/Vue_Content_Behaviour/)
 
 ## Credits
 
